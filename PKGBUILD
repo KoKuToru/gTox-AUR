@@ -9,7 +9,7 @@ license='GPL3'
 arch=('i686' 'x86_64')
 depends=('gtkmm3' 'libnotifymm' 'libconfig' 'sqlite' 'gettext' 'libcanberra' 'desktop-file-utils' 'gtk-update-icon-cache' 'gstreamermm' 'tox-git')
 makedepends=('check' 'git' 'cmake' 'librsvg')
-source=(.AURINFO "${pkgname%-git}::git+https://github.com/KoKuToru/gTox.git")
+source=("${pkgname%-git}::git+https://github.com/KoKuToru/gTox.git")
 conflicts=('gtox')
 install="gTox.install"
 
@@ -42,5 +42,4 @@ package()
         cd Build
         make install
 }
-md5sums=('68d41bd36be98f78acf7c021fbfd0d7d'
-         'SKIP')
+md5sums=('SKIP')
