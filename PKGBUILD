@@ -49,5 +49,5 @@ prepare()
     git config submodule."src/audio".url $srcdir/audio-git
     git submodule update
 }
-
-md5sums=('SKIP')
+md5sums=('SKIP'
+         'SKIP')
